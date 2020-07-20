@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "075fa4a6-4e98-4e75-b47a-07f90c196eed",
+		"name": "Learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"reservePrice\": 10450.00,\r\n\t\"item\": {\r\n\t\t\"itemId\": \"abcd\",\r\n\t\t\"description\": \"item description\"\r\n\t}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auctionItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auctionItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bids",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"reservePrice\": 10450.00,\r\n\t\"item\": {\r\n\t\t\"itemId\": \"abcd\",\r\n\t\t\"description\": \"item description\"\r\n\t}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/bids",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bids"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuctionItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"reservePrice\": 12450.00,\r\n\t\"item\": {\r\n\t\t\"itemId\": \"LMNO\",\r\n\t\t\"description\": \"item PQRS description\"\r\n\t}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auctionItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auctionItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListOfAuctionItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/auctionItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auctionItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAAuctionItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/auctionItems/19373",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auctionItems",
+						"19373"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBidders",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"auctionItemId\": \"19373\",\r\n\t\"maxAutoBidAmount\": 80.00,\r\n\t\"bidderName\": \"Jeet Dealership\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/outbid/Jeet Dealership",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"outbid",
+						"Jeet Dealership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveBids",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"auctionItemId\": \"32847\",\r\n\t\"maxAutoBidAmount\": 2100,\r\n\t\"bidderName\": \"Jeet Dealership\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/bids",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bids"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
